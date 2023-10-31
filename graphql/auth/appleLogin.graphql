@@ -1,0 +1,5 @@
+mutation AppleLogIn($token: String!) {
+  appleLogIn(token: $token) {
+    ...RegularUserResponse
+  }
+}

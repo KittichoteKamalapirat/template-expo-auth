@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Jouzu",
+    "slug": "shaberi",
+    "version": "1.0.3",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "buildNumber": "18",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kittishane.shaberi3",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app requires microphone access. Your voice will be used to enable interactive conversation with AI so you can practice speaking Japanese."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.kittishane.shaberi"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "USE_DOT_ENV_INSTEAD": "No",
+      "eas": {
+        "projectId": "baddb48c-d7ac-4eb3-bb2d-5c51f96d1c1f"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "flipper": true
+          }
+        }
+      ]
+    ]
+  }
+}

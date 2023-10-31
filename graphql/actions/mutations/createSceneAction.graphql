@@ -1,0 +1,15 @@
+mutation CreateSceneAction($input: CreateSceneActionInput!) {
+  createSceneAction(input: $input) {
+    action {
+      id
+      userId
+      sceneId
+      type
+      status
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

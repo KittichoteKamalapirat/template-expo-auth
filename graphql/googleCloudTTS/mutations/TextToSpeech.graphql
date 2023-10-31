@@ -1,0 +1,6 @@
+mutation TextToSpeech($input: TextToSpeechInput!) {
+  textToSpeech(input: $input) {
+    relativePath
+    url
+  }
+}

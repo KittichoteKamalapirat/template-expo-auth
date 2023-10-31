@@ -1,0 +1,9 @@
+query ToggleTranslateJpEn($input: TranslateInput!) {
+  toggleTranslateJpEn(input: $input) {
+    value
+    errors {
+      field
+      message
+    }
+  }
+}

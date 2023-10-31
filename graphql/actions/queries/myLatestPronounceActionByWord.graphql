@@ -1,0 +1,10 @@
+query MyLatestPronounceActionByWord(
+  $input: CreatePronounceActionInputForResolver!
+) {
+  myLatestPronounceActionByWord(input: $input) {
+    id
+    pronounceScore
+    pronounceWord
+    pronounceKana
+  }
+}

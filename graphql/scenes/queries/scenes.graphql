@@ -1,0 +1,20 @@
+query Scenes {
+  scenes {
+    id
+    title
+    description
+    goal
+    challenges
+    systemPrompt
+    isProFeature
+    isComplete
+    startJson {
+      text
+      isComplete
+    }
+    emoji
+    level
+    subLevel
+    day
+  }
+}

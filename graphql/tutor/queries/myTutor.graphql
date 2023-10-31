@@ -1,0 +1,23 @@
+query MyTutor {
+  myTutor {
+    id
+    userId
+    tutorMessages {
+      id
+      speechFile {
+        url
+        relativePath
+      }
+      messageLog {
+        role
+        content
+        morpho {
+          surface_form
+          basic_form
+        }
+      }
+
+      createdAt
+    }
+  }
+}

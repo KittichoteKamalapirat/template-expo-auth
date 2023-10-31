@@ -1,0 +1,8 @@
+query MyCompletePronounceActions {
+  myCompletePronounceActions {
+    id
+    status
+    type
+    level
+  }
+}

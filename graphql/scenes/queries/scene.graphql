@@ -1,0 +1,20 @@
+query Scene($id: String!) {
+  scene(id: $id) {
+    id
+    title
+    description
+    goal
+    challenges
+    systemPrompt
+    combinedSystemPrompt
+    isProFeature
+    isComplete
+    startJson {
+      text
+      isComplete
+    }
+    emoji
+    level
+    subLevel
+  }
+}

@@ -1,0 +1,9 @@
+query Translate($input: TranslateInput!) {
+  translate(input: $input) {
+    value
+    errors {
+      field
+      message
+    }
+  }
+}

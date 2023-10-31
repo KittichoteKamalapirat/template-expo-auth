@@ -1,0 +1,19 @@
+mutation CreateTutorMessage($input: CreateTutorMessageInput!) {
+  createTutorMessage(input: $input) {
+    tutorMessage {
+      id
+      speechFile {
+        url
+        relativePath
+      }
+      messageLog {
+        content
+        role
+      }
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

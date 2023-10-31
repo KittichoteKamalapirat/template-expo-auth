@@ -1,0 +1,20 @@
+mutation CreateScene($input: CreateSceneInput!) {
+  createScene(input: $input) {
+    scene {
+      id
+      title
+      description
+      goal
+      challenges
+      systemPrompt
+      emoji
+      isProFeature
+      level
+      subLevel
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

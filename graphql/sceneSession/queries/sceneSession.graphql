@@ -1,0 +1,21 @@
+query SceneSession($id: String!) {
+  sceneSession(id: $id) {
+    id
+    status
+    sceneMessages {
+      id
+      speechFile {
+        url
+        relativePath
+      }
+      messageLog {
+        role
+        content
+        morpho {
+          surface_form
+          basic_form
+        }
+      }
+    }
+  }
+}

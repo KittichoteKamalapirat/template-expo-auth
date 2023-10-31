@@ -1,0 +1,15 @@
+mutation CreateSceneMessage($input: CreateSceneMessageInput!) {
+  createSceneMessage(input: $input) {
+    sceneMessage {
+      id
+      messageLog {
+        content
+        role
+      }
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

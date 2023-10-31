@@ -1,0 +1,11 @@
+mutation CreateSceneSession($input: CreateSceneSessionInput!) {
+  createSceneSession(input: $input) {
+    sceneSession {
+      id
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

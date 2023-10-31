@@ -1,0 +1,15 @@
+query SceneReply($sceneId: String!, $input: [MessageLogInput!]!) {
+  sceneReply(sceneId: $sceneId, input: $input) {
+    errors {
+      field
+      message
+    }
+    logGptResponse {
+      role
+      jsonResponse {
+        text
+        isComplete
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+mutation CompletePronounceDeck($level: String!) {
+  completePronounceDeck(level: $level) {
+    action {
+      id
+      userId
+      sceneId
+      type
+      status
+    }
+    errors {
+      field
+      message
+    }
+  }
+}

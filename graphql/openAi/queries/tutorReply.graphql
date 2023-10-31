@@ -1,0 +1,16 @@
+query TutorReply($input: [MessageLogInput!]!) {
+  tutorReply(input: $input) {
+    errors {
+      field
+      message
+    }
+    messageLog {
+      role
+      content
+      morpho {
+        surface_form
+        basic_form
+      }
+    }
+  }
+}

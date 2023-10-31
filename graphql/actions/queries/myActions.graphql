@@ -1,0 +1,15 @@
+query MyActions {
+  myActions {
+    id
+    userId
+    sceneId
+    type
+    status
+    createdAt
+    scene {
+      title
+      description
+      emoji
+    }
+  }
+}
